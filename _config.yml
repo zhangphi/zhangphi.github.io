@@ -1,0 +1,6 @@
+theme: jekyll-theme-minimal
+title: Zhangphi's homepage
+description: Document my learning notes
+记录我的所思所想!
+include: ['toc.md','README.md','./misc/index.md','archives/index.md', \
+'thoughts/index.md','tags/index.md','bilingual/index.md','notes/index.md','posts/index.md']
