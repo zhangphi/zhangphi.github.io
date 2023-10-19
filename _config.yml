@@ -4,6 +4,7 @@ title:
 # Your name to show in the footer
 author: ZhangPhi
 
+theme: jekyll-theme-minimal
 include: ['toc.md','README.md','./archives/index.md', './bilingual/index.md', './misc/index.md', './posts/index.md', './tags/index.md','./thoughts/index.md']
 
 ###############################################
