@@ -4,6 +4,8 @@ title: ZhangPhi's Blogs
 # Your name to show in the footer
 author: ZhangPhi
 
+include: ['toc.md','README.md','./archives/index.md', './bilingual/index.md', './misc/index.md', './posts/index.md', './tags/index.md','./thoughts/index.md']
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
