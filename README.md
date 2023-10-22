@@ -9,5 +9,6 @@ My blogs
 
 
 
-Resources
+Resources (资源)
 * [Github Flavoured Markdown (适用于Github的Markdown格式)](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax )
+* [Online Etymology Dictionary (词源辞典)](https://www.etymonline.com/)
