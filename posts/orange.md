@@ -2,7 +2,7 @@
 
 26 October 2023
 
-One of my colleagues told me a couple of weeks back that they
+One of my colleagues told me a couple of weeks back that he and his team
 were interested in [Orange](https://github.com/biolab/orange3 ) and asked if we can help them. I have installed it on my computer this week 
 and played with it a little bit.
 
