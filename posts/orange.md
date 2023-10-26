@@ -1,4 +1,4 @@
-title: A Brief Introduction to Orange
+# A Brief Introduction to Orange
 
 One of my colleagues told me a couple of weeks back that they
 are interested in [Orange](https://github.com/biolab/orange3 ) and asked if we can help them. I have installed it on my computer this week 
