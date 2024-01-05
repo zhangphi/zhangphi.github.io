@@ -1,0 +1,28 @@
+<h1 id="structured-thinking-and-ontology-结构思维与本体论">structured thinking and ontology 结构思维与本体论</h1>
+<p>26 December 2023</p>
+<ol type="1">
+<li>引子</li>
+</ol>
+<p>因为工作的原因，我大概两年多以前开始接触ontology(本体论).我们有个内部项目，想利用Knowledge Graph(知识图谱)来表示毛利部落的传说和知识体系（比如毛利医学），一方面保持和传承毛利文化，同时也让大家可以利用计算机更方便快捷地查询有关知识。</p>
+<p>ontology在https://www.britannica.com/topic/ontology-metaphysics 上的解释是ontology, the philosophical study of being in general, or of what applies neutrally to everything that is real. It was called “first philosophy” by Aristotle in Book IV of his Metaphysics. The Latin term ontologia (“science of being”) was felicitously invented by the German philosopher Jacob Lorhard (Lorhardus) and first appeared in his work Ogdoas Scholastica (1st ed.) in 1606. It entered general circulation after being popularized by the German rationalist philosopher Christian Wolff in his Latin writings, especially Philosophia Prima sive Ontologia (1730; “First Philosophy or Ontology”). ChatGPT的翻译如下: 本体论是对普遍存在或适用于一切实际事物的哲学研究。在亚里士多德的《形而上学》第四册中，他将其称为“第一哲学”。拉丁术语“ontologia”（即“存在的科学”）是由德国哲学家雅各布·洛哈德（Lorhardus）巧妙创造的，首次出现在他的作品《奥格多亚学派》（1606年首版）中。在德国唯理主义哲学家克里斯蒂安·沃尔夫的拉丁著作，尤其是《第一哲学或本体论》（1730年）中，这一术语在被推广后开始在学术界广泛传播。</p>
+<p>我们工作的领域(数据科学)其实注定了我们不会有很多时间专注于某一个特定的领域，往往都是花几周甚至是几天了解个大概，然后就要判断我们是否可以结合/利用AI解决相关的问题。但对于ontology，我花了两三个月，也没搞明白我们可以怎么结合AI和ontology，来达成我们的目标。后来忙于其它项目，基本就没有再怎么看ontology的东西了。</p>
+<p>从去年年底今年年初我们有几个人开始涉足大语言模型(LLMs)，发现开源的LLMs都不尽如人意，远没有论文或者媒体炒作的那么利害。才又回过头看能不能结合LLMs和Knowledge Graph来作一些事情。加上自己业余时间看/听的一些思维方式方面的资料，这几个星期好像突然有所领悟。主要的领悟既不是关于ontology也不是关于LLMs，而是怎么看一个人/事/物，和怎么组织自己的想法或者说思维方式。怕自己忘了，所以把这些想法记录于此。</p>
+<ol start="2" type="1">
+<li>哲学的三个组成部分</li>
+</ol>
+<p>粗略地说，哲学可以分为本体论，认识论和方法论。 本体论是对普遍存在或适用于一切实际事物的哲学研究， 回答“是什么”。认识论呢，就是研究怎么认识我们所处的这个世界，回答“为什么”。方法论呢就是解决“怎么做”的问题。 用最简单的网络语言来说，就是：本体论是问“我是谁？”，关于What; 认识论是要解决“我从哪里来”,关于Why; 方法论是讨论“我要往哪里去?”, 关于How. （归纳为一个表格可能更好） 我们处在与各种各样的人/事/物的互动之中。外面是一个客观世界，每个人大脑中其实也有一个世界，是我们每个人对外部世界的感知(perception)。</p>
+<ol start="3" type="1">
+<li>世界观(怎么看这个世界？)</li>
+</ol>
+<p>归纳为一句话就是:首先要搞明白“是什么”，然后多问几个“为什么”，最后是“怎么办”。 我在工作生活中接触过很多人，可以说大多数人(包括我自己)大多数时候都没有搞明白自己在说什么。People usually don’t know what they are talking about. 作为一个数学专业背景的人，工作中我经常问“为什么”，但其实，更重要的是要先回答“是什么”。</p>
+<ol start="4" type="1">
+<li>不同视角看问题</li>
+</ol>
+<p>今年上半年和几个朋友在一个微信群里面聊天，曾经提到怎么教《机器学习》。我提到可以从三个不同的视角来讲授，一是用中学生可以明白的语言来概述“算法”或者模型的主要思想（远观），然后用比较严格的数学语言来介绍（近观），最后是让学生自己用计算机语言实现（计算机实现）。这三种视角下描述的是同一个对象，但各有各的用处。如果一个大学老师做不到前面两条，那他大概率是没有仔细琢磨过他要讲授的东西。</p>
+<p>我当时用最小二乘法作为入门例子，列出来一些我的想法。其实那个例子是我们在 AI DIY workshop中用过几次的例子。</p>
+<ol start="5" type="1">
+<li>Formulation and representation (问题的提法和研究对象的表示)</li>
+</ol>
+<p>How to formulate a problem? Represent an object/entity? Semantic representation. </p>
+<p>这里我们只看一个例子： Embeddings of “I love NZ” vs “I hate NZ” are similar. 这两句话的语义嵌入向量有一个对称超平面，但让我吃惊的是，这两句话的semantics不是我们作为人类所期望的那样“相反”，用数学语言来说，就是这两句话的表示不是关于原点对称的，原点不是对称点! 是LLMs"骗"了我们还是我们自己的偏见让我们看不到其它的维度的信息？至少，这两句话是用同一种语言，描述的是我和NZ之间的sentiment关系，甚至用的字数都是一样的！</p>
+<p>对LLMs来说，爱和恨其实是非常类似的。对人类而言，其实在很多方面也是如此：婚姻有“七年之痒”，如果不经营，再好的婚姻都会归于平淡。同样，恨一个人/一件事，如果没有人“经营”（提醒你），假以时日，也会淡忘。 </p>
